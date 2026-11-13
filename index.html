@@ -92,7 +92,15 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic 
 .th-ui{background:#e9e7e2}
 .th-ui:before{content:"";position:absolute;left:12px;right:12px;top:10px;height:12px;border-radius:3px;background:#1e1e22}
 .th-ui:after{content:"";position:absolute;left:12px;top:30px;width:calc(50% - 16px);height:56px;border-radius:5px;background:#fff;box-shadow:calc(50% - 4px) 0 0 #fff}
-.th-doc{background:#e7e5df}
+.th-doc{background:#f3f2ee}
+.th-doc:before{content:"";position:absolute;left:16px;right:16px;top:30px;height:14px;border:2px solid #1e1e22;border-radius:2px}
+.th-doc:after{content:"";position:absolute;left:16px;right:16px;top:50px;bottom:10px;border:1px solid #c9c6bd;background:linear-gradient(90deg,#c9c6bd 1px,transparent 1px) 0 0/33.4% 100%,repeating-linear-gradient(180deg,transparent 0 11px,#c9c6bd 11px 12px)}
+.th-cad{background:#0f1a2b;background-image:linear-gradient(rgba(120,160,220,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(120,160,220,.16) 1px,transparent 1px);background-size:12px 12px}
+.th-cad:before{content:"";position:absolute;left:34px;top:30px;width:110px;height:50px;border:2px solid #9fc0ef;border-radius:2px;box-shadow:inset 30px 0 0 -28px #9fc0ef,inset 62px 0 0 -60px #9fc0ef}
+.th-cad:after{content:"";position:absolute;left:152px;top:42px;width:72px;height:26px;border:2px solid var(--gold);border-left:0;border-radius:0 13px 13px 0}
+.th-photo{background:radial-gradient(circle at 50% 58%,#f4efe6 0 25px,#d9cfbf 26px 33px,transparent 34px),linear-gradient(135deg,#3b2a20,#16100b)}
+.th-photo:before{content:"";position:absolute;left:calc(50% - 11px);top:51px;width:22px;height:12px;border-radius:50%;background:#c0582f;box-shadow:13px 5px 0 -3px #6f8f3a,-11px 6px 0 -4px #e2b24c}
+.fc .mj{position:absolute;left:8px;top:8px;z-index:2;font-size:13px;line-height:1;padding:5px 9px;border-radius:99px;background:rgba(11,11,12,.74);color:#f5f5f7;letter-spacing:-.01em;white-space:nowrap}
 
 /* ---------- S3 pain ---------- */
 .s-pain .head{position:absolute;left:144px;top:180px;width:760px}
@@ -486,11 +494,11 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic 
   <div class="head">
     <div class="eyebrow a">01 아이디어 소개<b>고객의 불편</b></div>
     <h2 class="h a" style="--d:120">결과물은 많은데,<br>포트폴리오는 없습니다.</h2>
-    <p class="body a" style="--d:300">전문대는 매년 약 16만 명을 모집하는 실무 교육기관. 학생들은 2~3년 동안 게임·영상·디자인·코드 결과물을 쌓습니다.</p>
+    <p class="body a" style="--d:300">전문대는 매년 약 16만 명을 모집하는 실무 교육기관.<br>공학·디자인·경영·보건·조리까지, 모든 학과 학생이 2~3년&nbsp;동안 실습 결과물을 쌓습니다.</p>
   </div>
   <div class="pile" id="pile"></div>
   <div class="pains">
-    <div class="a" style="--d:700"><div class="n">01</div><div class="t">흩어진 결과물</div><div class="d">수업 폴더, GitHub, 클라우드에 제각각</div></div>
+    <div class="a" style="--d:700"><div class="n">01</div><div class="t">흩어진 결과물</div><div class="d">수업 폴더·클라우드·실습 기록에 제각각</div></div>
     <div class="a" style="--d:850"><div class="n">02</div><div class="t">빈 페이지에서 시작</div><div class="d">노션·PPT는 구성·문장·디자인 모두 직접</div></div>
     <div class="a" style="--d:1000"><div class="n">03</div><div class="t">팀 속에 묻힌 ‘나’</div><div class="d">내가 한 일을 구분하지 못해 낮게 평가</div></div>
   </div>
@@ -845,7 +853,7 @@ const SCRIPTS=[
 `안녕하십니까. 명지전문대학 AI게임소프트웨어학과 김태양입니다. 저희는 수업 결과물을 직무별 취업 포트폴리오로 바꿔 주는 AI 서비스, ‘폴리오’를 소개하겠습니다.`,
 `발표 순서입니다. 먼저 아이디어와 제안 배경을 말씀드리고, 기존 서비스와의 차별성, 목표 고객과 시장, 실제 동작하는 제품, 마지막으로 수익 모델과 사업화 계획 순서로 설명하겠습니다.`,
 `먼저 채용 시장의 변화입니다. 한국경영자총협회가 100인 이상 기업 500곳을 조사한 결과, 67.6%가 신규채용에서 가장 중요한 평가 요소로 ‘직무 관련 업무 경험’을 꼽았습니다. 72.2%는 올해 채용 트렌드로 ‘직무 중심 채용 강화’를 선택했습니다. 이제 신입도 무엇을 만들어 봤고, 그 안에서 어떤 역할을 했는지 증명해야 합니다. 그 증명의 수단이 바로 포트폴리오입니다.`,
-`전문대는 매년 약 16만 명을 모집하는 실무 중심 교육기관입니다. 학생들은 2~3년 동안 게임, 영상, 디자인, 코드 결과물을 꾸준히 만듭니다. 그런데 이 결과물은 수업 폴더, 깃허브, 클라우드에 흩어져 있습니다. 노션이나 PPT는 빈 페이지만 주기 때문에 구성부터 문장, 디자인까지 모두 학생이 설계해야 합니다. 팀 프로젝트에서는 ‘내가 한 일’을 구분해 쓰기도 어렵습니다. 결국 실제 역량보다 낮게 평가받습니다.`,
+`전문대는 매년 약 16만 명을 모집하는 실무 중심 교육기관입니다. 학과는 달라도 학생들은 2~3년 동안 꾸준히 결과물을 쌓습니다. 디자인과는 시안을, 경영과는 사업계획서를, 간호학과는 실습 기록을, 조리과는 플레이팅 사진을, 공학 계열은 도면과 코드, 작품을 남깁니다. 그런데 이 결과물은 수업 폴더와 클라우드, 실습 기록 곳곳에 흩어져 있습니다. 노션이나 PPT는 빈 페이지만 주기 때문에 구성부터 문장, 디자인까지 모두 학생이 설계해야 합니다. 팀 과제나 캡스톤에서는 ‘내가 한 일’을 구분해 쓰기도 어렵습니다. 결국 실제 역량보다 낮게 평가받습니다.`,
 `그래서 저희는 ‘폴리오’를 제안합니다. 학생은 수업 결과물을 올리기만 하면 됩니다. 파일, 이미지, 영상, 깃허브 링크를 올리면 AI가 역할과 사용 기술, 성과를 추출하고, 지원 직무에 맞는 포트폴리오로 자동 구성합니다. 보시는 것처럼 흩어져 있던 결과물이 한 장의 포트폴리오로 정리됩니다.`,
 `기존 도구와 비교해 보겠습니다. 노션과 PPT는 학생이 처음부터 직접 설계해야 하고, 포트폴리오 전시 플랫폼은 이미 완성된 작품을 올리는 경력자 중심입니다. 폴리오는 AI가 결과물을 분석해 자동으로 구성하고, 직무와 채용공고 단위로 맞춰 줍니다. 팀 프로젝트 기여도는 인터뷰로 정리하고, 학과 대시보드로 학교와 연결됩니다.`,
 `차별화 전략은 세 가지입니다. 첫째, 만드는 도구가 아니라 정리해 주는 서비스입니다. 이미 가진 결과물에서 출발하니 진입 장벽이 낮습니다. 둘째, 전문대 실습 맥락에 특화했습니다. 수업 과제와 팀 프로젝트, 학과별 직무 데이터를 바탕으로 범용 서비스가 놓치는 강점을 보여 줍니다. 셋째, 학교와 함께 성장합니다. 학과 단위로 도입하면 교수와 취업지원센터가 진행 현황을 보고 지도할 수 있어 B2B로 확장됩니다.`,
@@ -872,7 +880,18 @@ const CARDS=[
  {th:'video',nm:'학과홍보영상_최종.mp4',mt:'클라우드 · 2분 40초',role:'<b>역할</b>편집 · 모션그래픽',f:[1490,560,7],t:[1408,708]}
 ];
 const thumb=k=>k==='game'?'<div class="th th-game"><i></i><i></i><i></i></div>':`<div class="th th-${k}"></div>`;
-$('#pile').innerHTML=CARDS.map((c,i)=>`<div class="fc a fd" style="--d:${300+i*90};left:${c.f[0]}px;top:${c.f[1]}px;transform:rotate(${c.f[2]}deg);--t:${6+i*.7}s;--dx:${i%2?8:-8}px;--dy:${i%3?-12:10}px">${thumb(c.th)}<div class="nm">${c.nm}</div><div class="mt">${c.mt}</div></div>`).join('');
+/* S4 pile: results from many departments, not just one major */
+const PILE=[
+ {th:'pdf',mj:'경영과',nm:'카페창업_사업계획서.pdf',mt:'수업 폴더 · 18쪽',f:[990,96,-7]},
+ {th:'ui',mj:'시각디자인과',nm:'브랜드_리뉴얼_시안_v4.png',mt:'클라우드 · 2.4MB',f:[1270,70,5]},
+ {th:'doc',mj:'간호학과',nm:'성인간호_실습일지.hwp',mt:'실습 기록 · 4주',f:[1545,128,-4]},
+ {th:'cad',mj:'전기과',nm:'PLC_제어반_도면.dwg',mt:'캡스톤 · 팀 6명',f:[1120,322,-5]},
+ {th:'game',mj:'게임과',nm:'dungeonrun_build_v3.zip',mt:'수업 폴더 · 48.2MB',f:[1420,332,6]},
+ {th:'photo',mj:'호텔조리과',nm:'코스요리_플레이팅.jpg',mt:'실습 사진 · 24장',f:[985,560,4]},
+ {th:'video',mj:'방송영상과',nm:'학과홍보영상_최종.mp4',mt:'클라우드 · 2분 40초',f:[1265,548,-3]},
+ {th:'code',mj:'컴퓨터공학과',nm:'github.com/team4/smartfarm',mt:'GitHub · 커밋 212',f:[1540,580,6]}
+];
+$('#pile').innerHTML=PILE.map((c,i)=>`<div class="fc a fd" style="--d:${300+i*80};left:${c.f[0]}px;top:${c.f[1]}px;transform:rotate(${c.f[2]}deg);--t:${6+i*.7}s;--dx:${i%2?8:-8}px;--dy:${i%3?-12:10}px">${thumb(c.th).replace(/<\/div>$/,`<span class="mj">${c.mj}</span></div>`)}<div class="nm">${c.nm}</div><div class="mt">${c.mt}</div></div>`).join('');
 $('#fly').innerHTML=CARDS.map((c,i)=>`<div class="fc" style="--i:${i};--fx:${c.f[0]}px;--fy:${c.f[1]}px;--fr:${c.f[2]}deg;--tx:${c.t[0]}px;--ty:${c.t[1]}px">${thumb(c.th)}<div class="nm">${c.nm}</div><div class="mt">${c.mt}</div><div class="role">${c.role}</div></div>`).join('');
 
 /* ---------------- deck engine ---------------- */
@@ -945,7 +964,7 @@ function go(n,instant){
   if(instant){s.style.transition='none';requestAnimationFrame(()=>{s.style.transition='';});}
   s.classList.add('on');const h=hooks[s.dataset.title];h&&h.enter&&h.enter(s);
   $('#prog').style.width=((n+1)/N*100)+'%';
-  $('#hudN').textContent=String(n+1).padStart(2,'0')+' / '+N+'  ·  '+s.dataset.title+'   ·   11월 11일 23:18 버전';
+  $('#hudN').textContent=String(n+1).padStart(2,'0')+' / '+N+'  ·  '+s.dataset.title+'   ·   11월 13일 9:41 버전';
   try{history.replaceState(null,'','#s'+(n+1));}catch(e){try{location.hash='s'+(n+1);}catch(_){}}
   renderNotes();syncPresenter();
 }
